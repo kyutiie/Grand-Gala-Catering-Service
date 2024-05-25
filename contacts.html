@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grand Gala Catering Service</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        @media (max-width: 400.98px) { 
+            .logoname {
+                font-size: 1rem; 
+            }
+        }
+        @media (min-width: 400px) and (max-width: 600.98px) { 
+            .logoname {
+                font-size: 1.25rem;
+            }
+        }
+        @media (min-width: 500px) and (max-width: 700.98px) { 
+            .logoname {
+                font-size: 1.5rem;
+            }
+        }
+        @media (min-width: 700px) and (max-width: 900.98px) { 
+            .logoname {
+                font-size: 1.5rem;
+            }
+        }
+        @media (min-width: 1000px) { 
+            .logoname {
+                font-size: 2rem; 
+            }
+        }
+        .nav-item.active .nav-link {
+            color: #f1f1ee; 
+            background-color: #cea727;
+            border-radius: 10%;
+            font-weight: bold; 
+        }
+        /* Set the background image height for different screens */
+        .bg-image {
+            width: 100%;
+            object-fit: cover;
+        }
+        @media (min-width: 992px) {
+            .bg-image {
+                height: 40vh;
+            }
+        }
+        @media (max-width: 991.98px) {
+            .bg-image {
+                height: 30vh;
+            }
+        }
+        @media (max-width: 675.98px) {
+            .bg-image {
+                height: 24vh;
+            }
+        }
+        .position-absolute {
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            width: 100%;
+        }
+        h1.about {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 6vw;
+            position: absolute;
+            text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+            left: 50%;
+            transform: translateX(-50%);
+            color: rgb(255, 243, 243);
+            text-shadow: 20px 20px 25px rgba(0, 0, 0, 0.5);
+        }
+        .zoom-effect {
+            transition: background-color 0.3s, transform 0.2s;
+        }
+        .zoom-effect:hover {
+            background-color: rgba(114, 106, 106, 0.5);
+            transform: scale(1.05);
+        }
+        .bg-light-custom {
+            background-color: #f0e8cd;
+        }
+        .bg-dark-custom {
+            background-color: #cea727;
+        }
+        .text-custom {
+            color: #000000;
+        }
+        .container-custom {
+            background-color: #cea727;
+            border-radius: 10px;
+        }
+        .note-container {
+            background-color: #eede97;
+            border-radius: 10px;
+             width: 50%;
+             margin: auto;
+           
+        }
+        .sec2{
+            background-color: #050504;
+            border-radius: 10px;
+        }
+        .text{
+            color:#eede97;
+        }
+        .dot-list::before {
+    content: "• ";
+    color: black;
+}
+    </style>
+</head>
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+    <div class="container-fluid">
+        <a class="navbar-brand d-flex align-items-center" href="#">
+            <img src="logo.png" alt="logo" style="width:60px;" class="rounded-pill">
+            <h5 class="logoname ms-2 mb-0 text-warning">Grand Gala Catering Service</h5>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link text-center" href="index.html">HOME</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-center" href="aboutus.html">ABOUT US</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-center" href="services.html">SERVICES</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link text-center" href="contacts.html">CONTACTS</a>
+                </li>
+            </ul>
+         
+        </div>
+    </div>
+</nav>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<div class="position-relative">
+    <img src="bg1.jpg" alt="background" class="bg-image">
+    <div class="position-absolute">
+        <h1 class="about">CONTACT US</h1>
+    </div>
+</div>
+
+<div class="container-fluid bg-light-custom">
+    <div class="row justify-content-center ">
+       
+        <div class="col-md-4 m-5">
+            <div class="container-custom p-5">
+                <h1 class="text-custom text-center">MESSAGE US</h1>
+                <div class="row mt-5">
+                    <h5 class="text-custom">Contact Number: <b style="color:rgb(20, 114, 114);">09776506109
+                    </b></h5>
+                    <h5 class="text-custom">Email Address: <b style="color:rgb(20, 114, 114);">deguzmancatherin93@gmail.com</b></h5>
+                    <h5 class="text-custom">Facebook Page:<b style="color:rgb(20, 114, 114);"> Grand Gala Catering Service</b></h5>
+                    <div class="note-container p-4 mt-4 ">
+                        <h3 style="color: #f53636;"><b>NOTE</b></h3>
+                        <h5>Please send us your:</h5>
+                        <h6 class="dot-list" style="margin-left: 30%;">Fullname</h6>
+                        <h6 class="dot-list" style="margin-left: 30%;">Address</h6>
+                        <h6 class="dot-list" style="margin-left: 30%;">Contact Number</h6>
+                        <h6 class="dot-list" style="margin-left: 30%;">Venue</h6>
+                        <h6 class="dot-list" style="margin-left: 30%;">Event</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 m-5">
+            <div class="sec2 container p-5">
+                <h2 class="text">ORIENTAL MINDORO</h2>
+                <div class="row mt-3">
+                    <h4 class="text">Canubing 2, Calapan city</h4>
+                </div>
+                <div class="container d-flex justify-content-center">
+                    <img src="map.jpeg" alt="logo" style="width: 90%;" class="rounded-pill">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<footer class="footer text-center bg-dark text-white">
+    <div class="container-fluid">
+        <span>&copy; 2024 Grand Gala Catering Service</span>
+    </div>
+</footer>
+</body>
+</html>
