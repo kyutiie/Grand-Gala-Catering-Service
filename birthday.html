@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grand Gala Catering Service</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        @media (max-width: 400.98px) { 
+            .logoname {
+                font-size: 1rem; 
+            }
+        }
+        @media (min-width: 400px) and (max-width: 600.98px) { 
+            .logoname {
+                font-size: 1.25rem;
+            }
+        }
+        @media (min-width: 600px) and (max-width: 900.98px) { 
+            .logoname {
+                font-size: 1.5rem;
+            }
+        }
+        @media (min-width: 901px) { 
+            .logoname {
+                font-size: 2rem; 
+            }
+        }
+        .nav-item.active .nav-link {
+            color: #f1f1ee; 
+            background-color: #cea727;
+            border-radius: 10%;
+            font-weight: bold; 
+        }
+        .bg-image {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            margin-top: 4%;
+        }
+        @media (min-width: 992px) {
+            .bg-image {
+                height: 40vh;
+            }
+        }
+        @media (max-width: 991.98px) {
+            .bg-image {
+                height: 30vh;
+            }
+        }
+        @media (max-width: 675.98px) {
+            .bg-image {
+                height: 24vh;
+            }
+        }
+        .position-absolute {
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            width: 100%;
+        }
+        h1.about {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 6vw;
+            margin-top: 10%;
+            text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+            color: rgb(255, 243, 243);
+        }
+        .zoom-effect {
+            transition: background-color 0.3s, transform 0.2s;
+            border-radius: 100%;
+        }
+        .zoom-effect:hover {
+            background-color: rgba(255, 254, 254, 0.5);
+            transform: scale(1.05);
+        }
+        .custom-container {
+            background-color: #cea727;
+            border: 20px solid #fafafa;
+        }
+        .custom-img {
+            width: 60%;
+        }
+        .cap {
+            font-family: 'elephant';
+            text-shadow: 20px 20px 25px rgba(0, 0, 0, 0.5);
+        }
+        .card {
+            background-color: #cea727;
+        }
+        .best-card {
+            width: 100%;
+            border: 1px solid #ddd;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            background-color: #ebdea8;
+        }
+        .best-card-header {
+            background-color: #cea727;
+            padding: 20px;
+            text-align: center;
+            font-family: 'Lucida Handwriting' ;
+            font-weight: bold;
+            color: #362516;
+        }
+        .best-card-content {
+            padding: 20px;
+            text-align: center;
+             font-family: 'Times New Roman' ;
+
+        }
+        .best-card-content img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+        .best-card-footer {
+            background-color: #cea727;
+            padding: 10px;
+            text-align: center;
+            font-size: 12px;
+            color: #cea727;
+        }
+        body{
+            background-color: #1d1915;
+        }
+        .amenities-container {
+            background-color: #f8f9fa;
+            padding: 50px 0;
+        }
+        .amenity-item {
+            margin-bottom: 30px;
+        }
+        .amenity-icon {
+            font-size: 3rem;
+            color: #cea727;
+        }
+        .amenity-title {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        .amenity-description {
+            margin-top: 5px;
+            font-size: 1rem;
+            color: #6c757d;
+        }
+        
+    </style>
+</head>
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="logo.png" alt="logo" style="width:60px;" class="rounded-pill">
+                <h5 class="logoname ms-2 mb-0 text-warning">Grand Gala Catering Service</h5>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link text-center" href="index.html">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-center" href="aboutus.html">ABOUT US</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link text-center" href="services.html">SERVICES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-center" href="contacts.html">CONTACTS</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <div class="position-relative">
+        <img src="birthday.avif" alt="background" class="bg-image">
+        <div class="position-absolute">
+            <h1 class="about">BIRTHDAY SERVICES</h1>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="best-card">
+        <div class="best-card-header">
+            <h3><b>Celebrate Your Birthday in Grand Style</b></h3>
+        </div>
+        <div class="best-card-content">
+            <h4><b>"Let Grand Gala Birthday Services make your event extraordinary. With our exquisite menus and impeccable service, your birthday party will be an unforgettable celebration. We take care of every detail, so you can focus on enjoying your special day."</b></h4>
+        </div>
+        <div class="best-card-footer">
+            <p>Contact us: (123) 456-7890 | www.grandgalabirthdayservices.com</p>
+        </div>
+    </div>
+    
+    
+    
+    <hr>
+
+    <div class="container-fluid amenities-container text-center">
+        <div class="container">
+            <h2 class="mb-5">Grand Gala Birthday Service Amenities</h2>
+            <div class="row">
+                <div class="col-md-4 amenity-item">
+                    <div class="amenity-icon">
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                    <div class="amenity-title">Gourmet Birthday Menus</div>
+                    <div class="amenity-description">
+                        Exquisite, customizable menus crafted by our top chefs to suit your birthday theme.
+                    </div>
+                </div>
+                <div class="col-md-4 amenity-item">
+                    <div class="amenity-icon">
+                        <i class="fas fa-glass-cheers"></i>
+                    </div>
+                    <div class="amenity-title">Premium Beverage Packages</div>
+                    <div class="amenity-description">
+                        Exclusive beverage selections, including mocktails and signature drinks.
+                    </div>
+                </div>
+                <div class="col-md-4 amenity-item">
+                    <div class="amenity-icon">
+                        <i class="fas fa-concierge-bell"></i>
+                    </div>
+                    <div class="amenity-title">Impeccable Service</div>
+                    <div class="amenity-description">
+                        Professional, attentive staff dedicated to ensuring every detail is perfect.
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 amenity-item">
+                    <div class="amenity-icon">
+                        <i class="fas fa-chair"></i>
+                    </div>
+                    <div class="amenity-title">Elegant Venue Setup</div>
+                    <div class="amenity-description">
+                        Beautiful decor and setup tailored to your birthday theme and style.
+                    </div>
+                </div>
+                <div class="col-md-4 amenity-item">
+                    <div class="amenity-icon">
+                        <i class="fas fa-music"></i>
+                    </div>
+                    <div class="amenity-title">Live Entertainment</div>
+                    <div class="amenity-description">
+                        Options for live music, DJs, and other entertainment to make your day memorable.
+                    </div>
+                </div>
+                <div class="col-md-4 amenity-item">
+                    <div class="amenity-icon">
+                        <i class="fas fa-birthday-cake"></i>
+                    </div>
+                    <div class="amenity-title">Custom Birthday Cakes</div>
+                    <div class="amenity-description">
+                        Stunning, personalized birthday cakes designed to match your style.
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 amenity-item">
+                    <div class="amenity-icon">
+                        <i class="fas fa-camera"></i>
+                    </div>
+                    <div class="amenity-title">Photography and Videography</div>
+                    <div class="amenity-description">
+                        Capture every moment with our professional photography and videography services.
+                    </div>
+                </div>
+                <div class="col-md-4 amenity-item">
+                    <div class="amenity-icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <div class="amenity-title">Lighting and Sound</div>
+                    <div class="amenity-description">
+                        High-quality lighting and sound systems to enhance the atmosphere of your event.
+                    </div>
+                </div>
+                <div class="col-md-4 amenity-item">
+                    <div class="amenity-icon">
+                        <i class="fas fa-smile"></i>
+                    </div>
+                    <div class="amenity-title">Guest Entertainment</div>
+                    <div class="amenity-description">
+                        Fun activities and entertainment options for your guests, ensuring everyone has a great time.
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 amenity-item">
+                    <div class="amenity-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <div class="amenity-title">Floral Arrangements</div>
+                    <div class="amenity-description">
+                        Beautiful floral arrangements to enhance the decor and ambiance of your party.
+                    </div>
+                </div>
+                <div class="col-md-4 amenity-item">
+                    <div class="amenity-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="amenity-title">Choreographed Dance</div>
+                    <div class="amenity-description">
+                        Professional dance choreography to make your party entrance unforgettable.
+                    </div>
+                </div>
+                <div class="col-md-4 amenity-item">
+                    <div class="amenity-icon">
+                        <i class="fas fa-candy-cane"></i>
+                    </div>
+                    <div class="amenity-title">Candy and Dessert Bars</div>
+                    <div class="amenity-description">
+                        Delicious candy and dessert bars to sweeten your celebration.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    </div>
+    
+    
+       
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+    <div id="locationCarousel" class="carousel slide m-5" data-bs-ride="carousel">
+        <div class="carousel-inner text-center">
+            <div class="carousel-item active">
+                <img src="party_location1.jpg" class="d-block mx-auto" width="550" height="450" alt="Location 1">
+                <div class="carousel-caption d-md-block">
+                    <h5>Location 1: Rooftop Terrace</h5>
+                    <p>Escape to our rooftop terrace for a vibrant birthday party with stunning views.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="party_location2.jpg" class="d-block mx-auto" width="550" height="450" alt="Location 2">
+                <div class="carousel-caption d-md-block">
+                    <h5>Location 2: Club Lounge</h5>
+                    <p>Host your birthday party in our exclusive club lounge for a trendy and energetic atmosphere.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="party_location3.jpg" class="d-block mx-auto" width="550" height="450" alt="Location 3">
+                <div class="carousel-caption d-md-block">
+                    <h5>Location 3: Private Garden</h5>
+                    <p>Celebrate your birthday in our lush private garden, perfect for an outdoor party surrounded by nature.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="party_location4.jpeg" class="d-block mx-auto" width="550" height="450" alt="Location 4">
+                <div class="carousel-caption d-md-block">
+                    <h5>Location 4: Industrial Warehouse</h5>
+                    <p>Transform our industrial warehouse into a unique birthday party venue, full of urban charm.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="party_location5.jpg" class="d-block mx-auto" width="550" height="450" alt="Location 5">
+                <div class="carousel-caption d-md-block">
+                    <h5>Location 5: Beach Club</h5>
+                    <p>Experience the ultimate beach birthday party at our exclusive beach club, complete with seaside vibes.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="container">
+                    <h5 class="text-white">Custom Location</h5>
+                    <form id="customLocationForm">
+                        <div class="mb-3">
+                            <label for="customLocationName" class="form-label text-secondary">Location Name</label>
+                            <input type="text" class="form-control" id="customLocationName" placeholder="Enter location name">
+                        </div>
+                        <div class="mb-3">
+                            <label for="customLocationDescription" class="form-label text-secondary">Location Description</label>
+                            <textarea class="form-control" id="customLocationDescription" rows="3" placeholder="Enter location description"></textarea>
+                        </div>
+                        <div class="mb-3">
+                            <label for="customLocationImage" class="form-label text-secondary">Location Image</label>
+                            <input type="file" class="form-control" id="customLocationImage">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit Custom Location</button>
+                    </form>
+                    <div id="submissionMessage" class="mt-3 d-none alert alert-success" role="alert">
+                        Your custom location has been submitted successfully!
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <button class="carousel-control-prev" type="button" data-bs-target="#locationCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#locationCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    
+    <script>
+        document.getElementById("customLocationForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+            
+            document.getElementById("submissionMessage").classList.remove("d-none");
+        });
+    </script>
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <div class="container-fluid" style="background-color: #1d1915;">
+        <div class="row justify-content-center m-2">
+            <h1 class="text-center text-warning mt-2">CHOOSE NOW</h1>
+            <div class="col-md-3 mb-4">
+                <div class="card text-center mt-4">
+                    <div class="card-header bg-dark text-white">
+                        Option 1
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Standard Package</h5>
+                        <p class="card-text">Includes: Basic menu selection, standard service, limited customization.</p>
+                        <p class="card-text">Price: P10K 100-150 person</p>
+                        <p class="card-text">Price: P20K 151-300 person</p>
+                        <p class="card-text">Price: P30K 301-450 person</p>
+                        <p class="card-text"><b>add P20-50k for venue setup</b></p>
+                        <a href="contacts.html" class="btn btn-primary">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4">
+                <div class="card text-center mt-4">
+                    <div class="card-header bg-dark text-white">
+                        Option 2
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Premium Package</h5>
+                        <p class="card-text">Includes: Enhanced menu selection, premium service, moderate customization.</p>
+                        <p class="card-text">Price: P20K 100-150 person</p>
+                        <p class="card-text">Price: P30K 151-300 person</p>
+                        <p class="card-text">Price: P45K 301-450 person</p>
+                        <p class="card-text"><b>add P20-50k for venue setup</b></p>
+                        <a href="contacts.html" class="btn btn-primary">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4">
+                <div class="card text-center mt-4">
+                    <div class="card-header bg-dark text-white">
+                        Option 3
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Deluxe Package</h5>
+                        <p class="card-text">Includes: Premium menu selection, VIP service, extensive customization.</p>
+                        <p class="card-text">Price: P30K 100-150 person</p>
+                        <p class="card-text">Price: P50K 151-300 person</p>
+                        <p class="card-text">Price: P60K 301-450 person</p>
+                        <p class="card-text"><b>add P20-50k for venue setup</b></p>
+                        <a href="contacts.html" class="btn btn-primary">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4">
+                <div class="card text-center mt-4">
+                    <div class="card-header bg-dark text-white">
+                        Option 4
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Custom Package</h5>
+                        <p class="card-text">Includes: Tailored menu selection, bespoke service, full customization.</p>
+                        <p class="card-text">Price: Custom PRICE and VISITORS</p>
+                        <p class="card-text">Just contact us</p>
+                        <p class="card-text">You can also visit to our place</p>
+                        <p class="card-text"><b>add P20-50k for venue setup</b></p>
+                        <a href="contacts.html" class="btn btn-primary">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer text-center">
+        <div class="container-fluid bg-dark text-white">
+            <span>Contact us: (123) 456-7890 | www.grandgalacatering.com</span><br>
+            <span>&copy; 2024 Catering Service</span>
+        </div>
+    </footer>
+</body>
+</html>

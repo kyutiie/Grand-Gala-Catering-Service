@@ -40,25 +40,24 @@
         }
 
         .nav-item.active .nav-link {
-        color: #f1f1ee; 
-       background-color: #cea727;
-       border-radius: 10%;
-        font-weight: bold; 
+            color: #f1f1ee; 
+            background-color: #cea727;
+            border-radius: 10%;
+            font-weight: bold; 
         }
-         /* Set the background image height for tablets and smaller devices */
-         @media (max-width: 991.98px) {
+        
+       
+        @media (max-width: 991.98px) {
             .bg-image {
-                height: 720px; /* Adjust the height for tablets */
+                height: 100vh; 
             }
         }
 
-        /* Set the background image height for phones */
         @media (max-width: 575.98px) {
             .bg-image {
-                height: 480px; /* Adjust the height for phones */
+                height: 80vh;
             }
         }
-
 
         .position-absolute {
             top: 50%;
@@ -79,20 +78,20 @@
             background-color: #cea727;
         }
 
-        /* Adjust font sizes for smaller screens */
+       
         @media (max-width: 767.98px) {
             p {
-                font-size: 5vw; /* Adjust text size based on viewport width */
+                font-size: 5vw; 
                 margin: 0 0 1rem 0;
             }
 
             .btn {
-                font-size: 4vw; /* Adjust button size based on viewport width */
+                font-size: 4vw; 
                 margin-top: 2rem;
             }
         }
 
-        /* Original font sizes for desktop */
+       
         @media (min-width: 768px) {
             p:first-of-type {
                 font-size: 3vw;
@@ -174,11 +173,13 @@
     </div>
 </nav>
 
+
+
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-<div class=" position-relative">
+<div class="position-relative">
     <img src="bg.jpg" alt="Creative Art Box" class="bg-image" style="width: 100%;">
     <div class="position-absolute">
         <p style="margin-top:1%;margin-left:-60%; margin-bottom:3%;">The only one</p>
@@ -214,7 +215,7 @@
     <div class="row justify-content-center">
         <div class="col-12 text-center">
             <img src="logo.png" alt="logo" style="width:60%;" class="rounded-pill">
-            <h6 style="color: rgb(0, 0, 0); margin-top: -3%;font-size: 150%;">Your Expectations Drive Us Forward</h6>
+            <h6 style="color: rgb(0, 0, 0); margin-top: -3%;font-size: 150%;">Our passion is your perfect event</h6>
         </div>
     </div>
 </div>
@@ -238,10 +239,6 @@
      <span>&copy; 2024 Catering Service</span>
             </div>
            </footer>
-
-
-
-
 
 </body>
 </html>

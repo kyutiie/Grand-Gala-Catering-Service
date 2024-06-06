@@ -39,7 +39,7 @@
             border-radius: 10%;
             font-weight: bold; 
         }
-        /* Set the background image height for different screens */
+     
         .bg-image {
             width: 100%;
             object-fit: cover;
@@ -114,6 +114,12 @@
     content: "• ";
     color: black;
 }
+    .card-text{
+        font-size: 10px;
+    }
+    .card-title{
+        font-size: 12px;
+    }
     </style>
 </head>
 <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
@@ -160,39 +166,151 @@
 <div class="container-fluid bg-light-custom">
     <div class="row justify-content-center ">
        
-        <div class="col-md-4 m-5">
-            <div class="container-custom p-5">
-                <h1 class="text-custom text-center">MESSAGE US</h1>
-                <div class="row mt-5">
-                    <h5 class="text-custom">Contact Number: <b style="color:rgb(20, 114, 114);">09776506109
-                    </b></h5>
-                    <h5 class="text-custom">Email Address: <b style="color:rgb(20, 114, 114);">deguzmancatherin93@gmail.com</b></h5>
-                    <h5 class="text-custom">Facebook Page:<b style="color:rgb(20, 114, 114);"> Grand Gala Catering Service</b></h5>
-                    <div class="note-container p-4 mt-4 ">
-                        <h3 style="color: #f53636;"><b>NOTE</b></h3>
-                        <h5>Please send us your:</h5>
-                        <h6 class="dot-list" style="margin-left: 30%;">Fullname</h6>
-                        <h6 class="dot-list" style="margin-left: 30%;">Address</h6>
-                        <h6 class="dot-list" style="margin-left: 30%;">Contact Number</h6>
-                        <h6 class="dot-list" style="margin-left: 30%;">Venue</h6>
-                        <h6 class="dot-list" style="margin-left: 30%;">Event</h6>
+     
+
+        <div class="container border rounded shadow p-3 mb-5 bg-body"style="width:80%;margin:5%">
+            <div class="contact-infoss">
+                <div class="container">
+                    <div class="reservation-form">
+                        <form onsubmit="showSuccessMessage(event)">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-section">
+                                        <h2>Booking Details</h2>
+                                        <hr>
+                                        <div class="mb-3">
+                                            <label for="eventDate" class="form-label">Event Date</label>
+                                            <input type="date" class="form-control" id="eventDate" required>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="eventTime" class="form-label">Event Time</label>
+                                            <input type="time" class="form-control" id="eventTime" required>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="venue" class="form-label">Venue</label>
+                                            <input type="text" class="form-control" id="venue" required>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="numberOfGuests" class="form-label">Number of Guests</label>
+                                            <input type="number" class="form-control" id="numberOfGuests" min="1" required>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="package" class="form-label">Package</label>
+                                            <select class="form-select" id="package" required>
+                                                <option value="Standard">Standard</option>
+                                                <option value="Premium">Premium</option>
+                                                <option value="Deluxe">Deluxe</option>
+                                                <option value="Custom">Custom</option>
+                                            </select>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="budget" class="form-label">Budget</label>
+                                            <input type="text" class="form-control" id="budget">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="paymentMode" class="form-label">Mode of Payment</label>
+                                            <select class="form-select" id="paymentMode" required>
+                                                <option value="Cash">Cash</option>
+                                                <option value="Card">Any type of Card</option>
+                                                <option value="GCash">G-Cash</option>
+                                                <option value="PayMaya">Pay Maya</option>
+                                                <option value="BankTransfer">Bank Transfer</option>
+                                                <option value="PayPal">PayPal</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-section">
+                                        <h2>Personal Information</h2>
+                                        <hr>
+                                        <div class="mb-3">
+                                            <label for="firstName" class="form-label">First Name</label>
+                                            <input type="text" class="form-control" id="firstName" required>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="lastName" class="form-label">Last Name</label>
+                                            <input type="text" class="form-control" id="lastName" required>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="email" class="form-label">Email</label>
+                                            <input type="email" class="form-control" id="email" required>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="phone" class="form-label">Phone Number</label>
+                                            <input type="tel" class="form-control" id="phone" required>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="message" class="form-label">Message</label>
+                                            <textarea class="form-control" id="message" rows="4"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-end">
+                                <button type="submit" class="btn btn-primary">Submit Reservation</button>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="col-md-6 m-5">
-            <div class="sec2 container p-5">
-                <h2 class="text">ORIENTAL MINDORO</h2>
-                <div class="row mt-3">
-                    <h4 class="text">Canubing 2, Calapan city</h4>
-                </div>
-                <div class="container d-flex justify-content-center">
-                    <img src="map.jpeg" alt="logo" style="width: 90%;" class="rounded-pill">
-                </div>
+     
+ 
+<div class="modal fade" id="successModal" tabindex="-1" aria-labelledby="successModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="successModalLabel">Success</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                Your reservation is added successfully.
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
             </div>
         </div>
     </div>
 </div>
+
+<script>
+    function showSuccessMessage(event) {
+        event.preventDefault();
+
+   
+        var successModal = new bootstrap.Modal(document.getElementById('successModal'));
+        successModal.show();
+    }
+</script>
+
+<div class="container position-fixed bottom-0 end-0 p-3" style="width: 200px;">
+    <div class="card">
+        <div class="card-body">
+            <h5 class="card-title">Contact Information</h5>
+            <p class="card-text"><i class="fas fa-phone-alt"></i> Contact Number: <a href="tel:+63977650610">+639776506109</a></p>
+            <p class="card-text"><i class="fab fa-facebook"></i> Facebook Page: <a href="https://www.facebook.com/Grand-Gala-Catering-Service">Grand Gala Catering Service</a></p>
+            <p class="card-text"><i class="far fa-envelope"></i> Email: <a href="mailto:deguzmancatherin93@gmail.com">deguzmancatherin93@gmail.com</a></p>
+            <p class="card-text"><i class="fas fa-map-marker-alt"></i> Address: Canubing 2, Calapan city</p>
+        </div>
+    </div>
+</div>
+
+
+<div class="col-md-6 m-5">
+    <div class="sec2 container p-5">  
+        <div class="container contact-info mt-5 text-warning">
+            <h2>Address Information</h2>
+            <p><i class="fas fa-map-marker-alt"></i> Address: Canubing 2, Calapan city, Oriental Mindoro</p>
+            <p class="text-white">Grand Gala Catering Service is known for its elegant and sophisticated catering services, specializing in weddings, corporate events, and other special occasions. Located in the heart of the city, our venue offers a luxurious setting for your event, ensuring a memorable experience for you and your guests.</p>
+         
+            <div class="container d-flex justify-content-center">
+                <img src="map.jpeg" alt="venue map" style="width: 90%;" class="rounded-pill">
+            </div>
+        </div>
+    </div>
+</div>
+
 
 
 
